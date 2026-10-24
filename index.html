@@ -1,0 +1,677 @@
+Here is your complete, updated `index.html` with your actual LinkedIn profile (`[https://www.linkedin.com/in/adithya-m-6099232/](https://www.linkedin.com/in/adithya-m-6099232/)`) integrated into both the sticky navigation header and the interactive contact cards.
+
+You can copy this entire block and paste it directly into your repository’s `index.html`:
+
+```html
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adithya Maniyala | Chief Technology Officer & Principal Systems Architect</title>
+  <meta name="description" content="Portfolio and technical dossier of Adithya Maniyala - CTO & Principal Enterprise Software Architect specializing in n-tier distributed systems and large-scale platform modernization.">
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f0fdf4',
+              500: '#22c55e',
+              600: '#16a34a',
+              900: '#14532d',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .font-mono-code {
+      font-family: 'JetBrains Mono', monospace;
+    }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-200 antialiased selection:bg-emerald-500 selection:text-black">
+
+  <!-- Top Sticky Navigation -->
+  <header class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-emerald-500 to-teal-400 flex items-center justify-center font-bold text-slate-950 text-lg shadow-lg shadow-emerald-500/20">
+          AM
+        </div>
+        <div>
+          <span class="font-bold text-lg text-white group-hover:text-emerald-400 transition">Adithya Maniyala</span>
+          <span class="block text-xs text-slate-400 uppercase tracking-widest font-mono-code">CTO & Principal Architect</span>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+        <a href="#about" class="hover:text-emerald-400 transition">Leadership</a>
+        <a href="#competencies" class="hover:text-emerald-400 transition">Competencies</a>
+        <a href="#projects" class="hover:text-emerald-400 transition">Systems & Projects</a>
+        <a href="#tech-matrix" class="hover:text-emerald-400 transition">Skill Matrix</a>
+        <a href="#timeline" class="hover:text-emerald-400 transition">Trajectory</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <!-- Integrated LinkedIn Link (Header) -->
+        <a href="https://www.linkedin.com/in/adithya-m-6099232/" target="_blank" rel="noopener noreferrer" 
+           class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-slate-900 border border-slate-700 text-xs font-semibold text-slate-200 hover:border-emerald-500 hover:text-emerald-400 transition">
+          <i data-lucide="linkedin" class="w-4 h-4"></i>
+          <span>LinkedIn</span>
+        </a>
+        <a href="#contact" class="px-4 py-2 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-slate-950 text-xs font-bold transition shadow-lg shadow-emerald-500/20">
+          Get in Touch
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="relative pt-24 pb-20 overflow-hidden border-b border-slate-800/80">
+      <div class="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(16,185,129,0.15),rgba(255,255,255,0))]"></div>
+      <div class="max-w-7xl mx-auto px-6 relative z-10">
+        <div class="max-w-4xl">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-mono-code font-semibold mb-6">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            20+ Years Enterprise Systems Architecture & Engineering Leadership
+          </div>
+          <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight leading-tight sm:leading-none mb-6">
+            Architecting Resilient Distributed Systems. <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-200">Leading Scaled Engineering Teams.</span>
+          </h1>
+          <p class="text-lg sm:text-xl text-slate-400 leading-relaxed mb-10 max-w-3xl">
+            Technology Executive and Principal Architect with extensive experience leading 25+ member cross-functional engineering teams. Specialized in full-scale legacy modernizations, high-throughput n-tier architectures, and mission-critical domain platforms across AgriTech, Healthcare, FinTech, and Industrial Automation.
+          </p>
+          <div class="flex flex-wrap gap-4 items-center">
+            <a href="#projects" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold transition shadow-xl shadow-emerald-500/20">
+              <i data-lucide="layers" class="w-5 h-5"></i>
+              <span>Explore Featured Systems</span>
+            </a>
+            <a href="/assets/Adithya_Maniyala_CV.pdf" target="_blank" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-slate-900 border border-slate-700 hover:border-slate-500 text-slate-200 font-semibold transition">
+              <i data-lucide="file-text" class="w-5 h-5"></i>
+              <span>Download CV (PDF)</span>
+            </a>
+            <a href="https://www.linkedin.com/in/adithya-m-6099232/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-slate-900 border border-slate-700 hover:border-emerald-500 hover:text-emerald-400 text-slate-200 font-semibold transition">
+              <i data-lucide="linkedin" class="w-5 h-5"></i>
+              <span>View LinkedIn</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Key Metrics Cards -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-16 pt-10 border-t border-slate-800">
+          <div class="p-6 rounded-2xl bg-slate-900/50 border border-slate-800/80">
+            <div class="text-3xl font-extrabold text-white mb-1">20+</div>
+            <div class="text-xs uppercase tracking-wider text-slate-400 font-semibold">Years SDLC & IT Mastery</div>
+          </div>
+          <div class="p-6 rounded-2xl bg-slate-900/50 border border-slate-800/80">
+            <div class="text-3xl font-extrabold text-emerald-400 mb-1">25+</div>
+            <div class="text-xs uppercase tracking-wider text-slate-400 font-semibold">Engineers & QA Led</div>
+          </div>
+          <div class="p-6 rounded-2xl bg-slate-900/50 border border-slate-800/80">
+            <div class="text-3xl font-extrabold text-white mb-1">12+</div>
+            <div class="text-xs uppercase tracking-wider text-slate-400 font-semibold">Years AgriTech & ERP Architecture</div>
+          </div>
+          <div class="p-6 rounded-2xl bg-slate-900/50 border border-slate-800/80">
+            <div class="text-3xl font-extrabold text-teal-300 mb-1">Full-Spectrum</div>
+            <div class="text-xs uppercase tracking-wider text-slate-400 font-semibold">From Win32/C++ to Cloud .NET</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Executive Leadership & Methodology -->
+    <section id="about" class="py-20 border-b border-slate-800/80 bg-slate-900/20">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+          <div class="lg:col-span-5">
+            <div class="sticky top-28">
+              <span class="text-xs font-mono-code font-semibold tracking-widest text-emerald-400 uppercase block mb-3">Executive Summary</span>
+              <h2 class="text-3xl font-bold text-white mb-6">Bridging Deep Engineering with Organizational Strategy</h2>
+              <p class="text-slate-400 leading-relaxed mb-6">
+                My architectural philosophy is rooted in low-level systems precision and high-level enterprise design. Throughout a 20-year career, I have taken platforms through every phase of the lifecycle—from requirement definition and prototyping to high-concurrency production deployments, legacy refactoring, and multi-tenant cloud migrations.
+              </p>
+              <div class="p-5 rounded-2xl bg-slate-900 border border-slate-800 space-y-3">
+                <div class="flex items-center gap-3 text-sm text-slate-300">
+                  <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-400 shrink-0"></i>
+                  <span>Master of Computer Applications (M.C.A.) — First Class Honors</span>
+                </div>
+                <div class="flex items-center gap-3 text-sm text-slate-300">
+                  <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-400 shrink-0"></i>
+                  <span>End-to-end SDLC ownership: Initiation, Planning, Execution & Closing</span>
+                </div>
+                <div class="flex items-center gap-3 text-sm text-slate-300">
+                  <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-400 shrink-0"></i>
+                  <span>Cross-functional alignment across Science, R&D, QA & Leadership</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div class="p-6 rounded-2xl bg-slate-900/80 border border-slate-800 hover:border-slate-700 transition">
+              <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center mb-4">
+                <i data-lucide="cpu" class="w-5 h-5"></i>
+              </div>
+              <h3 class="text-lg font-bold text-white mb-2">Systems & Low-Level</h3>
+              <p class="text-sm text-slate-400 leading-relaxed">
+                Expertise in C, C++, VC++ Win32 APIs, multithreading, socket programming, hardware interfacing (RS-232, UART chips), and cryptographic hashing (MD5, SHA-256).
+              </p>
+            </div>
+
+            <div class="p-6 rounded-2xl bg-slate-900/80 border border-slate-800 hover:border-slate-700 transition">
+              <div class="w-10 h-10 rounded-xl bg-teal-500/10 text-teal-400 flex items-center justify-center mb-4">
+                <i data-lucide="network" class="w-5 h-5"></i>
+              </div>
+              <h3 class="text-lg font-bold text-white mb-2">N-Tier & SOA Architecture</h3>
+              <p class="text-sm text-slate-400 leading-relaxed">
+                Proven mastery designing decoupled systems using WCF REST, Smart Client 2.1, Unity Framework (IoC/DI), Entity Framework, and modern MVC patterns.
+              </p>
+            </div>
+
+            <div class="p-6 rounded-2xl bg-slate-900/80 border border-slate-800 hover:border-slate-700 transition">
+              <div class="w-10 h-10 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center mb-4">
+                <i data-lucide="database" class="w-5 h-5"></i>
+              </div>
+              <h3 class="text-lg font-bold text-white mb-2">High-Volume Data Engineering</h3>
+              <p class="text-sm text-slate-400 leading-relaxed">
+                Extensive RDBMS modeling and complex query optimization across SQL Server (2008–2016), Oracle PL/SQL, IBM DB2, and enterprise reporting via SSRS.
+              </p>
+            </div>
+
+            <div class="p-6 rounded-2xl bg-slate-900/80 border border-slate-800 hover:border-slate-700 transition">
+              <div class="w-10 h-10 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center mb-4">
+                <i data-lucide="users" class="w-5 h-5"></i>
+              </div>
+              <h3 class="text-lg font-bold text-white mb-2">Delivery & Team Leadership</h3>
+              <p class="text-sm text-slate-400 leading-relaxed">
+                Directing engineering organizations of 25+ developers and QA specialists. Technical hiring, impediment removal, sprint governance, and stakeholder alignment.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Detailed Projects & Case Studies -->
+    <section id="projects" class="py-24 border-b border-slate-800">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+          <div>
+            <span class="text-xs font-mono-code font-semibold tracking-widest text-emerald-400 uppercase block mb-3">Enterprise Portfolio</span>
+            <h2 class="text-3xl sm:text-4xl font-bold text-white">Featured Production Architectures</h2>
+          </div>
+          <p class="text-slate-400 max-w-md text-sm">
+            Detailed case studies across multi-million dollar platforms, mission-critical healthcare search engines, and real-time transaction processing.
+          </p>
+        </div>
+
+        <div class="space-y-12">
+
+          <!-- Project 1: CattleXpert -->
+          <div class="p-8 sm:p-10 rounded-3xl bg-slate-900/70 border border-slate-800 hover:border-slate-700 transition relative overflow-hidden">
+            <div class="flex flex-wrap items-center justify-between gap-4 mb-6">
+              <div>
+                <span class="px-3 py-1 rounded-md bg-emerald-500/10 text-emerald-400 font-mono-code text-xs font-semibold uppercase">AgriTech & Enterprise ERP</span>
+                <h3 class="text-2xl sm:text-3xl font-bold text-white mt-2">CattleXpert Enterprise Platform — Legacy Modernization & Rewrite</h3>
+                <p class="text-sm text-slate-400 font-medium mt-1">Client: CattleXpert LLC | Role: Principal Technical Consultant & Chief Architect (Managing 25+ Engineers)</p>
+              </div>
+              <div class="text-right">
+                <span class="text-xs font-mono-code text-slate-400 block">Duration</span>
+                <span class="text-sm font-semibold text-slate-200">Dec 2012 – Present</span>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-8">
+              <div class="lg:col-span-7 space-y-4 text-slate-300 text-sm leading-relaxed">
+                <p>
+                  Architected and directed the complete rewrite of the CattleXpert system—an automated, mission-critical livestock farming and livestock ERP serving commercial cattle operations across North America. The system governs the entire lifecycle: animal purchasing, dynamic pen movements, treatment tracking, feed-call formulas, dry-matter calculations, and final sale liquidation.
+                </p>
+                <p>
+                  Engineered comprehensive financial and operational sub-modules: automated invoicing, multi-entity accounting, and master record management for cattle owners, feedlot operators, buyers, and contractors.
+                </p>
+                <div class="space-y-2 pt-2">
+                  <h4 class="text-xs font-mono-code uppercase tracking-wider text-emerald-400 font-bold">Key Architectural Deliverables:</h4>
+                  <ul class="list-disc list-inside space-y-1.5 text-slate-400 text-xs">
+                    <li>Led ground-up n-tier modernization using WCF REST, Smart Client 2.1, Unity Framework (IoC), and SQL Server caching.</li>
+                    <li>Managed and coordinated 25+ developers and test engineers across R&D, Science, Architecture, QA, and Database teams.</li>
+                    <li>Developed Object-Oriented technical specifications and detailed UML design documentation.</li>
+                    <li>Spearheaded recruitment, sprint estimation using MPP, roadblock elimination, and executive milestone reporting.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="lg:col-span-5 bg-slate-950/60 p-6 rounded-2xl border border-slate-800/80 flex flex-col justify-between">
+                <div>
+                  <h4 class="text-xs font-mono-code uppercase tracking-wider text-slate-400 font-semibold mb-4">Environment & Tech Stack</h4>
+                  <div class="flex flex-wrap gap-2">
+                    <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs font-mono-code text-slate-200">.NET C#</span>
+                    <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs font-mono-code text-slate-200">ASP.NET</span>
+                    <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs font-mono-code text-slate-200">WCF REST</span>
+                    <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs font-mono-code text-slate-200">Smart Client 2.1</span>
+                    <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs font-mono-code text-slate-200">SQL Server 2012/2016</span>
+                    <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs font-mono-code text-slate-200">SQL Cache</span>
+                    <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs font-mono-code text-slate-200">Unity Framework</span>
+                    <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs font-mono-code text-slate-200">SSRS Reporting</span>
+                    <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs font-mono-code text-slate-200">HTML5 / CSS3 / jQuery</span>
+                  </div>
+                </div>
+                <div class="mt-6 pt-6 border-t border-slate-800">
+                  <div class="flex items-center justify-between text-xs text-slate-400">
+                    <span>Architecture Pattern</span>
+                    <span class="font-mono-code text-slate-200">N-Tier / SOA / Smart Client</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Micromedex -->
+          <div class="p-8 sm:p-10 rounded-3xl bg-slate-900/70 border border-slate-800 hover:border-slate-700 transition relative overflow-hidden">
+            <div class="flex flex-wrap items-center justify-between gap-4 mb-6">
+              <div>
+                <span class="px-3 py-1 rounded-md bg-blue-500/10 text-blue-400 font-mono-code text-xs font-semibold uppercase">Healthcare & Clinical Decision Support</span>
+                <h3 class="text-2xl sm:text-3xl font-bold text-white mt-2">Thomson Reuters Micromedex — Clinical Evidence Engine & Browser</h3>
+                <p class="text-sm text-slate-400 font-medium mt-1">Client: Thomson Reuters | Role: Senior Software Engineer / Module Lead</p>
+              </div>
+              <div class="text-right">
+                <span class="text-xs font-mono-code text-slate-400 block">Duration</span>
+                <span class="text-sm font-semibold text-slate-200">Dec 2006 – Sep 2010</span>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-8">
+              <div class="lg:col-span-7 space-y-4 text-slate-300 text-sm leading-relaxed">
+                <p>
+                  Architected two core tiers of the industry-standard evidence-based decision support system used by physicians, hospital nurses, and clinical pharmacists globally for drug interactions, toxicology, and dosage contraindications.
+                </p>
+                <div class="space-y-2 pt-2">
+                  <h4 class="text-xs font-mono-code uppercase tracking-wider text-blue-400 font-bold">Two-Stage Architectural Architecture:</h4>
+                  <ul class="list-disc list-inside space-y-2 text-slate-400 text-xs">
+                    <li><strong class="text-slate-300">Quarterly Mastering Stage:</strong> Ingested high-volume pharmaceutical research data feeds from global universities, US government bodies, and medical institutions (TXT, HTML, XML), transforming them via high-efficiency pipelines into unified, high-speed binary <code class="text-emerald-400">.DAT</code> structures.</li>
+                    <li><strong class="text-slate-300">HCS Search Browser Engine:</strong> Built the mission-critical clinical search browser using C, C++, and VC++ Win32 API. Implemented multi-indexed search (Integrated Master Index, Search by Category, Search by Relational Database) for instantaneous medical lookups across massive datasets.</li>
+                    <li><strong class="text-slate-300">CICS Mainframe Engine:</strong> Maintained synchronization and compatibility with the mainframe-based CICS/VSAM query engine for hospital enterprise environments.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="lg:col-span-5 bg-slate-950/60 p-6 rounded-2xl border border-slate-800/80 flex flex-col justify-between">
+                <div>
+                  <h4 class="text-xs font-mono-code uppercase tracking-wider text-slate-400 font-semibold mb-4">Environment & Tech Stack</h4>
+                  <div class="flex flex-wrap gap-2">
+                    <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs font-mono-code text-slate-200">C / C++</span>
+                    <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs font-mono-code text-slate-200">VC++ Win32 APIs</span>
+                    <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs font-mono-code text-slate-200">Oracle RDBMS</span>
+                    <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs font-mono-code text-slate-200">MS Access</span>
+                    <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs font-mono-code text-slate-200">Perl</span>
+                    <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs font-mono-code text-slate-200">.NET C#</span>
+                    <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs font-mono-code text-slate-200">ASP.NET / ADO.NET</span>
+                    <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs font-mono-code text-slate-200">Cobol / CICS / VSAM</span>
+                  </div>
+                </div>
+                <div class="mt-6 pt-6 border-t border-slate-800">
+                  <div class="flex items-center justify-between text-xs text-slate-400">
+                    <span>Platforms</span>
+                    <span class="font-mono-code text-slate-200">Windows, Unix, Mainframes</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: Radiant Systems POS -->
+          <div class="p-8 sm:p-10 rounded-3xl bg-slate-900/70 border border-slate-800 hover:border-slate-700 transition relative overflow-hidden">
+            <div class="flex flex-wrap items-center justify-between gap-4 mb-6">
+              <div>
+                <span class="px-3 py-1 rounded-md bg-amber-500/10 text-amber-400 font-mono-code text-xs font-semibold uppercase">Petroleum Retail & FinTech POS</span>
+                <h3 class="text-2xl sm:text-3xl font-bold text-white mt-2">Radiant Systems PCS — Integrated Petroleum POS & Payment Controller</h3>
+                <p class="text-sm text-slate-400 font-medium mt-1">Client: Radiant Systems | Role: Senior Software Engineer</p>
+              </div>
+              <div class="text-right">
+                <span class="text-xs font-mono-code text-slate-400 block">Duration</span>
+                <span class="text-sm font-semibold text-slate-200">Nov 2005 – Nov 2006</span>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+              <div class="lg:col-span-7 space-y-4 text-slate-300 text-sm leading-relaxed">
+                <p>
+                  Engineered core logic for an integrated petroleum credit card payment and point-of-sale solution merging convenience-store merchandise inventory with automated forecourt fuel dispenser controllers.
+                </p>
+                <p>
+                  Designed real-time logic streams tying the POS, Electronic Payment Controller, Fuel Controller, and Site Controller together: handling concurrent credit card authorization at the dispenser, cash management, automated receipt generation, and real-time fuel-pump cutoff.
+                </p>
+              </div>
+              <div class="lg:col-span-5 bg-slate-950/60 p-6 rounded-2xl border border-slate-800/80">
+                <h4 class="text-xs font-mono-code uppercase tracking-wider text-slate-400 font-semibold mb-4">Environment & Tech Stack</h4>
+                <div class="flex flex-wrap gap-2">
+                  <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs font-mono-code text-slate-200">C / C++</span>
+                  <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs font-mono-code text-slate-200">VC++</span>
+                  <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs font-mono-code text-slate-200">Win32 APIs</span>
+                  <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs font-mono-code text-slate-200">Fuel Controller Interfacing</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: WALL Distributed Computing & Industrial Projects -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- WALL -->
+            <div class="p-8 rounded-3xl bg-slate-900/50 border border-slate-800 flex flex-col justify-between">
+              <div>
+                <span class="px-3 py-1 rounded-md bg-purple-500/10 text-purple-400 font-mono-code text-xs font-semibold uppercase">Distributed Systems & Graphics</span>
+                <h3 class="text-xl font-bold text-white mt-3 mb-2">Accenture "WALL" Distributed Multi-Display Tiled Graphics Array</h3>
+                <p class="text-xs text-slate-400 mb-4">Client: Accenture Services (Chicago Innovation Center) | Role: Software Engineer</p>
+                <p class="text-sm text-slate-300 leading-relaxed mb-4">
+                  Built a distributed clustering toolkit enabling graphical applications to span massive multi-projector tiled displays (such as an 8-projector array delivering 4096x1536 resolution) without GPU bottlenecks. The toolkit synchronized distributed rendering subsets across networked PCs transparently.
+                </p>
+              </div>
+              <div class="pt-4 border-t border-slate-800">
+                <span class="text-xs font-mono-code text-slate-400 block mb-2">Technologies</span>
+                <div class="flex flex-wrap gap-1.5">
+                  <span class="px-2 py-0.5 rounded bg-slate-800 text-xs font-mono-code text-slate-300">C / C++</span>
+                  <span class="px-2 py-0.5 rounded bg-slate-800 text-xs font-mono-code text-slate-300">VC++ Win32</span>
+                  <span class="px-2 py-0.5 rounded bg-slate-800 text-xs font-mono-code text-slate-300">Distributed Sockets</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Industrial Hardware Serial & NFC -->
+            <div class="p-8 rounded-3xl bg-slate-900/50 border border-slate-800 flex flex-col justify-between">
+              <div>
+                <span class="px-3 py-1 rounded-md bg-cyan-500/10 text-cyan-400 font-mono-code text-xs font-semibold uppercase">Embedded & Industrial Systems</span>
+                <h3 class="text-xl font-bold text-white mt-3 mb-2">UART RS-232 Serial Terminal Communications & NFC Supplier Systems</h3>
+                <p class="text-xs text-slate-400 mb-4">Clients: Trendz Technologies / Nuclear Fuel Complex / ITC | Role: Software Engineer</p>
+                <p class="text-sm text-slate-300 leading-relaxed mb-4">
+                  Engineered low-level hardware data communication pipelines using RS-232 serial cables and UART chip register manipulation for industrial terminals. Architected supplier procurement audit systems on Oracle RDBMS for the Nuclear Fuel Complex (NFC) and commodity export/import tracking for ITC.
+                </p>
+              </div>
+              <div class="pt-4 border-t border-slate-800">
+                <span class="text-xs font-mono-code text-slate-400 block mb-2">Technologies</span>
+                <div class="flex flex-wrap gap-1.5">
+                  <span class="px-2 py-0.5 rounded bg-slate-800 text-xs font-mono-code text-slate-300">RS-232 / UART</span>
+                  <span class="px-2 py-0.5 rounded bg-slate-800 text-xs font-mono-code text-slate-300">C / C++</span>
+                  <span class="px-2 py-0.5 rounded bg-slate-800 text-xs font-mono-code text-slate-300">Oracle RDBMS</span>
+                  <span class="px-2 py-0.5 rounded bg-slate-800 text-xs font-mono-code text-slate-300">Hardware Registers</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Comprehensive Skill Matrix -->
+    <section id="tech-matrix" class="py-24 border-b border-slate-800 bg-slate-900/30">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="text-xs font-mono-code font-semibold tracking-widest text-emerald-400 uppercase block mb-3">Technical Repertoire</span>
+          <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">Comprehensive Technical Skill Matrix</h2>
+          <p class="text-slate-400 text-sm">
+            Detailed breakdown of languages, enterprise frameworks, database engines, and debugging environments leveraged across 20+ years of active development.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Programming Languages -->
+          <div class="p-6 rounded-2xl bg-slate-950/80 border border-slate-800">
+            <h3 class="text-base font-bold text-white mb-4 flex items-center gap-2">
+              <i data-lucide="code-2" class="w-4 h-4 text-emerald-400"></i>
+              Languages
+            </h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1 rounded-lg bg-slate-900 border border-slate-800 text-xs font-mono-code text-slate-300">C# .NET</span>
+              <span class="px-3 py-1 rounded-lg bg-slate-900 border border-slate-800 text-xs font-mono-code text-slate-300">C</span>
+              <span class="px-3 py-1 rounded-lg bg-slate-900 border border-slate-800 text-xs font-mono-code text-slate-300">C++</span>
+              <span class="px-3 py-1 rounded-lg bg-slate-900 border border-slate-800 text-xs font-mono-code text-slate-300">Visual C++ (VC++)</span>
+              <span class="px-3 py-1 rounded-lg bg-slate-900 border border-slate-800 text-xs font-mono-code text-slate-300">Visual Basic 6.0</span>
+              <span class="px-3 py-1 rounded-lg bg-slate-900 border border-slate-800 text-xs font-mono-code text-slate-300">SQL / PL-SQL</span>
+              <span class="px-3 py-1 rounded-lg bg-slate-900 border border-slate-800 text-xs font-mono-code text-slate-300">JavaScript</span>
+              <span class="px-3 py-1 rounded-lg bg-slate-900 border border-slate-800 text-xs font-mono-code text-slate-300">Perl</span>
+            </div>
+          </div>
+
+          <!-- Microsoft Technologies & Frameworks -->
+          <div class="p-6 rounded-2xl bg-slate-950/80 border border-slate-800">
+            <h3 class="text-base font-bold text-white mb-4 flex items-center gap-2">
+              <i data-lucide="layers" class="w-4 h-4 text-emerald-400"></i>
+              Microsoft Frameworks & ORM
+            </h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1 rounded-lg bg-slate-900 border border-slate-800 text-xs font-mono-code text-slate-300">.NET Framework 3.0–4.5+</span>
+              <span class="px-3 py-1 rounded-lg bg-slate-900 border border-slate-800 text-xs font-mono-code text-slate-300">WCF REST Services</span>
+              <span class="px-3 py-1 rounded-lg bg-slate-900 border border-slate-800 text-xs font-mono-code text-slate-300">Smart Client 2.1</span>
+              <span class="px-3 py-1 rounded-lg bg-slate-900 border border-slate-800 text-xs font-mono-code text-slate-300">LINQ</span>
+              <span class="px-3 py-1 rounded-lg bg-slate-900 border border-slate-800 text-xs font-mono-code text-slate-300">Entity Framework</span>
+              <span class="px-3 py-1 rounded-lg bg-slate-900 border border-slate-800 text-xs font-mono-code text-slate-300">Unity Framework (IoC)</span>
+              <span class="px-3 py-1 rounded-lg bg-slate-900 border border-slate-800 text-xs font-mono-code text-slate-300">ASP.NET / ADO.NET</span>
+            </div>
+          </div>
+
+          <!-- RDBMS & Reporting -->
+          <div class="p-6 rounded-2xl bg-slate-950/80 border border-slate-800">
+            <h3 class="text-base font-bold text-white mb-4 flex items-center gap-2">
+              <i data-lucide="database" class="w-4 h-4 text-emerald-400"></i>
+              Databases & Reporting
+            </h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1 rounded-lg bg-slate-900 border border-slate-800 text-xs font-mono-code text-slate-300">SQL Server (2008–2016)</span>
+              <span class="px-3 py-1 rounded-lg bg-slate-900 border border-slate-800 text-xs font-mono-code text-slate-300">Oracle RDBMS</span>
+              <span class="px-3 py-1 rounded-lg bg-slate-900 border border-slate-800 text-xs font-mono-code text-slate-300">IBM DB2</span>
+              <span class="px-3 py-1 rounded-lg bg-slate-900 border border-slate-800 text-xs font-mono-code text-slate-300">SSRS Enterprise Reports</span>
+              <span class="px-3 py-1 rounded-lg bg-slate-900 border border-slate-800 text-xs font-mono-code text-slate-300">ODBC Interfacing</span>
+              <span class="px-3 py-1 rounded-lg bg-slate-900 border border-slate-800 text-xs font-mono-code text-slate-300">SQL Query Optimization</span>
+            </div>
+          </div>
+
+          <!-- Web & Scripting -->
+          <div class="p-6 rounded-2xl bg-slate-950/80 border border-slate-800">
+            <h3 class="text-base font-bold text-white mb-4 flex items-center gap-2">
+              <i data-lucide="layout" class="w-4 h-4 text-emerald-400"></i>
+              Web & UI Architecture
+            </h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1 rounded-lg bg-slate-900 border border-slate-800 text-xs font-mono-code text-slate-300">HTML5 / DHTML</span>
+              <span class="px-3 py-1 rounded-lg bg-slate-900 border border-slate-800 text-xs font-mono-code text-slate-300">CSS3</span>
+              <span class="px-3 py-1 rounded-lg bg-slate-900 border border-slate-800 text-xs font-mono-code text-slate-300">jQuery</span>
+              <span class="px-3 py-1 rounded-lg bg-slate-900 border border-slate-800 text-xs font-mono-code text-slate-300">Backbone.js</span>
+              <span class="px-3 py-1 rounded-lg bg-slate-900 border border-slate-800 text-xs font-mono-code text-slate-300">AngularJS 4.0</span>
+              <span class="px-3 py-1 rounded-lg bg-slate-900 border border-slate-800 text-xs font-mono-code text-slate-300">PDF/CSV Export Engines</span>
+            </div>
+          </div>
+
+          <!-- Diagnostics, Debugging & Case Tools -->
+          <div class="p-6 rounded-2xl bg-slate-950/80 border border-slate-800">
+            <h3 class="text-base font-bold text-white mb-4 flex items-center gap-2">
+              <i data-lucide="terminal" class="w-4 h-4 text-emerald-400"></i>
+              Tools, Packaging & Cloud
+            </h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1 rounded-lg bg-slate-900 border border-slate-800 text-xs font-mono-code text-slate-300">Microsoft Azure</span>
+              <span class="px-3 py-1 rounded-lg bg-slate-900 border border-slate-800 text-xs font-mono-code text-slate-300">WinDbg (WinDebugger)</span>
+              <span class="px-3 py-1 rounded-lg bg-slate-900 border border-slate-800 text-xs font-mono-code text-slate-300">MS TFS / VSS / Git / SVN</span>
+              <span class="px-3 py-1 rounded-lg bg-slate-900 border border-slate-800 text-xs font-mono-code text-slate-300">Rational Rose (UML)</span>
+              <span class="px-3 py-1 rounded-lg bg-slate-900 border border-slate-800 text-xs font-mono-code text-slate-300">Advanced Installer 11.6</span>
+              <span class="px-3 py-1 rounded-lg bg-slate-900 border border-slate-800 text-xs font-mono-code text-slate-300">InstallShield 5.5–2011</span>
+            </div>
+          </div>
+
+          <!-- Security & Algorithms -->
+          <div class="p-6 rounded-2xl bg-slate-950/80 border border-slate-800">
+            <h3 class="text-base font-bold text-white mb-4 flex items-center gap-2">
+              <i data-lucide="shield-check" class="w-4 h-4 text-emerald-400"></i>
+              Security & Domain Expertise
+            </h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1 rounded-lg bg-slate-900 border border-slate-800 text-xs font-mono-code text-slate-300">SHA-256 / MD5 Hashing</span>
+              <span class="px-3 py-1 rounded-lg bg-slate-900 border border-slate-800 text-xs font-mono-code text-slate-300">AgriTech & Cattle Management</span>
+              <span class="px-3 py-1 rounded-lg bg-slate-900 border border-slate-800 text-xs font-mono-code text-slate-300">Healthcare Drug Systems</span>
+              <span class="px-3 py-1 rounded-lg bg-slate-900 border border-slate-800 text-xs font-mono-code text-slate-300">Petroleum Retail POS</span>
+              <span class="px-3 py-1 rounded-lg bg-slate-900 border border-slate-800 text-xs font-mono-code text-slate-300">Industrial Automation</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Career Trajectory Timeline -->
+    <section id="timeline" class="py-24 border-b border-slate-800">
+      <div class="max-w-4xl mx-auto px-6">
+        <div class="text-center mb-16">
+          <span class="text-xs font-mono-code font-semibold tracking-widest text-emerald-400 uppercase block mb-3">Professional Evolution</span>
+          <h2 class="text-3xl sm:text-4xl font-bold text-white">Career Leadership Timeline</h2>
+        </div>
+
+        <div class="relative border-l border-slate-800 ml-4 md:ml-32 space-y-12">
+          
+          <!-- Timeline Item 1 -->
+          <div class="relative pl-8 group">
+            <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-emerald-500 border-4 border-slate-950 group-hover:scale-125 transition"></div>
+            <div class="md:absolute md:-left-36 md:text-right top-1 text-xs font-mono-code text-emerald-400 font-bold mb-1 md:mb-0">
+              2024 – 2026
+            </div>
+            <h3 class="text-lg font-bold text-white">Chief Technology Officer</h3>
+            <div class="text-sm font-semibold text-emerald-400/90 mb-2">ODC Techsential Cloud Services LLP</div>
+            <p class="text-sm text-slate-400 leading-relaxed">
+              Executive technology roadmap governance, cloud architecture delivery, organizational scaling, and engineering operations leadership.
+            </p>
+          </div>
+
+          <!-- Timeline Item 2 -->
+          <div class="relative pl-8 group">
+            <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-slate-700 border-4 border-slate-950 group-hover:bg-emerald-400 transition"></div>
+            <div class="md:absolute md:-left-36 md:text-right top-1 text-xs font-mono-code text-slate-400 font-semibold mb-1 md:mb-0">
+              2019 – 2024
+            </div>
+            <h3 class="text-lg font-bold text-white">Principal Technical Consultant</h3>
+            <div class="text-sm font-semibold text-slate-300 mb-2">CattleXpert LLC</div>
+            <p class="text-sm text-slate-400 leading-relaxed">
+              Managed 25+ developers and QA engineers. Led high-concurrency livestock accounting, feeding engines, and cross-team coordination across R&D and QA.
+            </p>
+          </div>
+
+          <!-- Timeline Item 3 -->
+          <div class="relative pl-8 group">
+            <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-slate-700 border-4 border-slate-950 group-hover:bg-emerald-400 transition"></div>
+            <div class="md:absolute md:-left-36 md:text-right top-1 text-xs font-mono-code text-slate-400 font-semibold mb-1 md:mb-0">
+              2012 – 2018
+            </div>
+            <h3 class="text-lg font-bold text-white">Technical Manager & Software Architect</h3>
+            <div class="text-sm font-semibold text-slate-300 mb-2">CattleXpert LLC</div>
+            <p class="text-sm text-slate-400 leading-relaxed">
+              Directed ground-up architectural rewrite into n-tier .NET, WCF REST, Smart Client, and optimized SQL Server 2012/2016 caching.
+            </p>
+          </div>
+
+          <!-- Timeline Item 4 -->
+          <div class="relative pl-8 group">
+            <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-slate-700 border-4 border-slate-950 group-hover:bg-emerald-400 transition"></div>
+            <div class="md:absolute md:-left-36 md:text-right top-1 text-xs font-mono-code text-slate-400 font-semibold mb-1 md:mb-0">
+              2010 – 2012
+            </div>
+            <h3 class="text-lg font-bold text-white">Technical Lead</h3>
+            <div class="text-sm font-semibold text-slate-300 mb-2">CattleXpert LLC</div>
+            <p class="text-sm text-slate-400 leading-relaxed">
+              Managed core legacy codebases in VC++ COM, VB6, and IBM DB2; initiated the strategic migration roadmap toward modern .NET components.
+            </p>
+          </div>
+
+          <!-- Timeline Item 5 -->
+          <div class="relative pl-8 group">
+            <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-slate-700 border-4 border-slate-950 group-hover:bg-emerald-400 transition"></div>
+            <div class="md:absolute md:-left-36 md:text-right top-1 text-xs font-mono-code text-slate-400 font-semibold mb-1 md:mb-0">
+              2006 – 2010
+            </div>
+            <h3 class="text-lg font-bold text-white">Senior Software Engineer & Module Lead</h3>
+            <div class="text-sm font-semibold text-slate-300 mb-2">Thomson Reuters Micromedex</div>
+            <p class="text-sm text-slate-400 leading-relaxed">
+              Engineered data mastering pipelines and built the C/C++ Win32 HCS Search Engine indexing comprehensive global pharmacology data.
+            </p>
+          </div>
+
+          <!-- Timeline Item 6 -->
+          <div class="relative pl-8 group">
+            <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-slate-700 border-4 border-slate-950 group-hover:bg-emerald-400 transition"></div>
+            <div class="md:absolute md:-left-36 md:text-right top-1 text-xs font-mono-code text-slate-400 font-semibold mb-1 md:mb-0">
+              2003 – 2006
+            </div>
+            <h3 class="text-lg font-bold text-white">Software Systems Engineer</h3>
+            <div class="text-sm font-semibold text-slate-300 mb-2">Radiant Systems · Accenture · Trendz Technologies</div>
+            <p class="text-sm text-slate-400 leading-relaxed">
+              Developed petroleum payment controllers (Radiant), distributed graphics arrays (Accenture WALL), and hardware UART RS-232 serial communication modules.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Footer Section -->
+    <section id="contact" class="py-24 bg-slate-950 relative">
+      <div class="max-w-4xl mx-auto px-6 text-center">
+        <span class="text-xs font-mono-code font-semibold tracking-widest text-emerald-400 uppercase block mb-3">Direct Engagement</span>
+        <h2 class="text-3xl sm:text-4xl font-bold text-white mb-6">Let's Connect & Discuss High-Scale Architecture</h2>
+        <p class="text-slate-400 text-base leading-relaxed mb-10 max-w-2xl mx-auto">
+          Available for executive technology advisory, fractional CTO consulting, and mission-critical legacy system modernizations.
+        </p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-left mb-12">
+          <!-- Integrated LinkedIn Link (Contact Card) -->
+          <a href="https://www.linkedin.com/in/adithya-m-6099232/" target="_blank" rel="noopener noreferrer" 
+             class="p-6 rounded-2xl bg-slate-900 border border-slate-800 hover:border-emerald-500/50 hover:bg-slate-900/80 transition group">
+            <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center mb-4 group-hover:scale-110 transition">
+              <i data-lucide="linkedin" class="w-5 h-5"></i>
+            </div>
+            <div class="text-xs font-mono-code text-slate-400 uppercase">Professional Network</div>
+            <div class="text-sm font-bold text-white mt-1 group-hover:text-emerald-400 transition">Connect on LinkedIn &rarr;</div>
+          </a>
+
+          <!-- Email Card -->
+          <a href="mailto:adithyam_m@yahoo.com" 
+             class="p-6 rounded-2xl bg-slate-900 border border-slate-800 hover:border-emerald-500/50 hover:bg-slate-900/80 transition group">
+            <div class="w-10 h-10 rounded-xl bg-teal-500/10 text-teal-400 flex items-center justify-center mb-4 group-hover:scale-110 transition">
+              <i data-lucide="mail" class="w-5 h-5"></i>
+            </div>
+            <div class="text-xs font-mono-code text-slate-400 uppercase">Email Directly</div>
+            <div class="text-sm font-bold text-white mt-1 group-hover:text-emerald-400 transition">adithyam_m@yahoo.com</div>
+          </a>
+
+          <!-- Phone / Location Card -->
+          <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800">
+            <div class="w-10 h-10 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center mb-4">
+              <i data-lucide="map-pin" class="w-5 h-5"></i>
+            </div>
+            <div class="text-xs font-mono-code text-slate-400 uppercase">Location & Contact</div>
+            <div class="text-sm font-bold text-white mt-1">+91 98859 01957</div>
+            <div class="text-xs text-slate-400 mt-0.5">Secunderabad / Hyderabad, India</div>
+          </div>
+        </div>
+
+        <div class="pt-10 border-t border-slate-800/80 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+          <div>© 2026 Adithya Maniyala. All rights reserved.</div>
+          <div class="font-mono-code">Built for Enterprise Resilience</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Initialize Lucide Icons -->
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
+
+```
